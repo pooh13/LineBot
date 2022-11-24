@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\Webhook\" />
+    <None Remove="Enum\" />
+    <None Remove="Domain\" />
+    <None Remove="interface\" />
+    <None Remove="Dtos\Messages\" />
+    <None Remove="Providers\" />
+    <None Remove="Dtos\Messages\Request\" />
+    <None Remove="UploadFiles\" />
+    <None Remove="Dtos\Actions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\Webhook\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Domain\" />
+    <Folder Include="interface\" />
+    <Folder Include="Dtos\Messages\" />
+    <Folder Include="Providers\" />
+    <Folder Include="Dtos\Messages\Request\" />
+    <Folder Include="UploadFiles\" />
+    <Folder Include="Dtos\Actions\" />
+  </ItemGroup>
+</Project>
