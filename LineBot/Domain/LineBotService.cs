@@ -12,6 +12,8 @@ namespace LineBot.Services
 {
     public class LineBotService : ILineBotService
     {
+        // ngrok
+        public string FilePath = @"https://13e7-114-37-143-116.ngrok.io/";
 
         // (將 LineBotController 裡宣告的 ChannelAccessToken & ChannelSecret 移到 LineBotService中)
         // 貼上 messaging api channel 中的 accessToken & secret
@@ -209,7 +211,7 @@ namespace LineBot.Services
                                                     Uri = "https://www.appx.com.tw"
                                                 }
                                             },
-                                             // 使用 uri schema 分享 Line Bot 資訊
+                                            // 使用 uri schema 分享 Line Bot 資訊
                                             new QuickReplyButtonDto {
                                                 Action = new ActionDto {
                                                     Type = ActionTypeEnum.Uri,
@@ -268,6 +270,7 @@ namespace LineBot.Services
                         };
                     }
 
+                    // 關鍵字 : "Sender"
                     if (eventDto.Message.Text == "Sender")
                     {
                         replyMessage = new ReplyMessageRequestDto<TextMessageDto>
@@ -281,7 +284,7 @@ namespace LineBot.Services
                                     Sender = new SenderDto
                                     {
                                         Name = "客服人員 1號",
-                                        IconUrl = "https://13e7-114-37-143-116.ngrok.io/UploadFiles/man.png"
+                                        IconUrl = FilePath + "UploadFiles/man.png"
                                     }
                                 },
                                 new TextMessageDto
@@ -290,7 +293,7 @@ namespace LineBot.Services
                                     Sender = new SenderDto
                                     {
                                         Name = "客服人員 2號",
-                                        IconUrl = "https://13e7-114-37-143-116.ngrok.io/UploadFiles/woman.png"
+                                        IconUrl = FilePath + "UploadFiles/woman.png"
                                     }
                                 }
                             }
@@ -311,7 +314,7 @@ namespace LineBot.Services
                                     Template = new ButtonsTemplateDto
                                     {
                                         // 此處使用的是 Imgur 上圖片的絕對路徑
-                                        ThumbnailImageUrl = "https://13e7-114-37-143-116.ngrok.io/UploadFiles/tom&jerry.JPG",
+                                        ThumbnailImageUrl = FilePath + "UploadFiles/tom&jerry.JPG",
                                         ImageAspectRatio = TemplateImageAspectRatioEnum.Rectangle,
                                         ImageSize = TemplateImageSizeEnum.Cover,
                                         Title = "親愛的用戶您好，歡迎您使用本美食推薦系統",
@@ -352,6 +355,8 @@ namespace LineBot.Services
                             }
                         };
                     }
+
+                    // 關鍵字 : "Confirm"
                     if (eventDto.Message.Text == "Confirm")
                     {
                         replyMessage = new ReplyMessageRequestDto<TemplateMessageDto<ConfirmTemplateDto>>
@@ -389,6 +394,7 @@ namespace LineBot.Services
                             }
                         };
                     }
+
                     // 關鍵字 : "Carousel"
                     if (eventDto.Message.Text == "Carousel")
                     {
@@ -406,7 +412,7 @@ namespace LineBot.Services
                                         {
                                             new CarouselColumnObjectDto
                                             {
-                                                ThumbnailImageUrl = "https://13e7-114-37-143-116.ngrok.io/UploadFiles/cat.JPG",
+                                                ThumbnailImageUrl = FilePath + "UploadFiles/cat.JPG",
                                                 Title = "CAT",
                                                 Text = "This is a cat!",
                                                 Actions = new List<ActionDto>
@@ -422,7 +428,7 @@ namespace LineBot.Services
                                             },
                                             new CarouselColumnObjectDto
                                             {
-                                                ThumbnailImageUrl = "https://13e7-114-37-143-116.ngrok.io/UploadFiles/tom&jerry.JPG",
+                                                ThumbnailImageUrl = FilePath + "UploadFiles/tom&jerry.JPG",
                                                 Title = "Tom & Jerry",
                                                 Text = "Is a cat and a mouse!",
                                                 Actions = new List<ActionDto>
@@ -461,7 +467,7 @@ namespace LineBot.Services
                                         {
                                             new ImageCarouselColumnObjectDto
                                             {
-                                                ImageUrl = "https://13e7-114-37-143-116.ngrok.io/UploadFiles/cat.JPG",
+                                                ImageUrl = FilePath + "UploadFiles/cat.JPG",
                                                 Action = new ActionDto
                                                 {
                                                     Type = ActionTypeEnum.Uri,
@@ -471,7 +477,7 @@ namespace LineBot.Services
                                             },
                                             new ImageCarouselColumnObjectDto
                                             {
-                                                ImageUrl = "https://13e7-114-37-143-116.ngrok.io/UploadFiles/tom&jerry.JPG",
+                                                ImageUrl = FilePath + "UploadFiles/tom&jerry.JPG",
                                                 Action = new ActionDto
                                                 {
                                                     Type = ActionTypeEnum.Uri,

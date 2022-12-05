@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{11AD7020-78B4-4478-9286-D5FEABCDE082}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LineBot/Domain/RichMenuService.cs">
+    <Files>
+      <File FileName="LineBot/Enum/MessageTypeEnum.cs" Line="70" Column="37" />
+      <File FileName="LineBot/Controllers/LineBotController.cs" Line="49" Column="10" />
+      <File FileName="LineBot/Domain/LineBotService.cs" Line="480" Column="71" />
+      <File FileName="LineBot/Domain/RichMenuService.cs" Line="57" Column="14" />
+      <File FileName="LineBot/Dtos/Richmenu/RichMenuListDto.cs" Line="2" Column="23" />
+      <File FileName="LineBot/Program.cs" Line="34" Column="1" />
+      <File FileName="LineBot/Dtos/Richmenu/RichMenuAliasDto.cs" Line="12" Column="6" />
+      <File FileName="LineBot/Dtos/Actions/ActionDto.cs" Line="29" Column="53" />
+      <File FileName="LineBot/appsettings.json" Line="8" Column="22" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LineBot" expanded="True">
+            <Node name="LineBot" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Domain" expanded="True">
+                <Node name="RichMenuService.cs" selected="True" />
+              </Node>
+              <Node name="Dtos" expanded="True">
+                <Node name="Actions" expanded="True" />
+                <Node name="Messages" expanded="True">
+                  <Node name="Request" expanded="True" />
+                </Node>
+                <Node name="Richmenu" expanded="True" />
+                <Node name="Webhook" expanded="True" />
+              </Node>
+              <Node name="Enum" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.LineBot PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

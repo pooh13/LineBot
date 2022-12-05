@@ -24,6 +24,9 @@ namespace LineBot.Dtos
         public string? Initial { get; set; }
         public string? Max { get; set; }
         public string? Min { get; set; }
+
+        // rich menu switch action
+        public string? RichMenuAliasId { get; set; }
     }
 
     public class UriActionAltUriDto

@@ -1,0 +1,11 @@
+/Users/huangyishan/Documents/project/未命名檔案夾/LineBot
+/Users/huangyishan/Documents/project/未命名檔案夾/appsettings.Development.json
+/Users/huangyishan/Documents/project/未命名檔案夾/appsettings.json
+/Users/huangyishan/Documents/project/未命名檔案夾/LineBot.dll
+/Users/huangyishan/Documents/project/未命名檔案夾/LineBot.deps.json
+/Users/huangyishan/Documents/project/未命名檔案夾/LineBot.runtimeconfig.json
+/Users/huangyishan/Documents/project/未命名檔案夾/LineBot.pdb
+/Users/huangyishan/Documents/project/未命名檔案夾/Microsoft.OpenApi.dll
+/Users/huangyishan/Documents/project/未命名檔案夾/Swashbuckle.AspNetCore.Swagger.dll
+/Users/huangyishan/Documents/project/未命名檔案夾/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/huangyishan/Documents/project/未命名檔案夾/Swashbuckle.AspNetCore.SwaggerUI.dll

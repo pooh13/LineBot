@@ -21,6 +21,7 @@
     <None Remove="Dtos\Messages\Request\" />
     <None Remove="UploadFiles\" />
     <None Remove="Dtos\Actions\" />
+    <None Remove="Dtos\Richmenu\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Dtos\" />
@@ -33,5 +34,6 @@
     <Folder Include="Dtos\Messages\Request\" />
     <Folder Include="UploadFiles\" />
     <Folder Include="Dtos\Actions\" />
+    <Folder Include="Dtos\Richmenu\" />
   </ItemGroup>
 </Project>
